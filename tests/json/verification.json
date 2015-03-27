@@ -1,0 +1,47 @@
+{
+    "client_id": "0123456789abcdef01234567",
+    "created": 1426838223,
+    "facebook_photo_url": "",
+    "flags": [
+        "DB00",
+        "EM00",
+        "NM00",
+        "UN00"
+    ],
+    "member_id": "340a856163880f7661080e67",
+    "partner_id": "1005489e7ec70ec34d9zp43l",
+    "probes": {
+        "birthday": [
+            null,
+            null,
+            null
+        ],
+        "employer": {
+            "employer": null
+        },
+        "external_phone": null,
+        "facebook_verified": [
+            ""
+        ],
+        "name": [
+            "",
+            "",
+            ""
+        ],
+        "top_employer": null,
+        "university": {
+            "university": null
+        }
+    },
+    "updated": 1426838223,
+    "verifications": {
+        "birthday": null,
+        "employer": null,
+        "external_phone": null,
+        "facebook_verified": true,
+        "name": null,
+        "top_employer": null,
+        "university": null
+    },
+    "version": "3.0.0"
+}
