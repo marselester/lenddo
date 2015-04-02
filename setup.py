@@ -10,7 +10,7 @@ setup(
     description='Python API client for Lenddo.com',
     long_description=open('README.rst').read(),
     install_requires=[
-        'requests>=2',
+        'requests>=2.4.2',
         'python-dateutil>=2.1',
         'six'
     ],
