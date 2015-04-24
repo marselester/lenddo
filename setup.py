@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='Lenddo',
-    version='0.0.1',
+    version='0.0.2',
     packages=['lenddo'],
     author='Marsel Mavletkulov',
     author_email='marselester@ya.ru',

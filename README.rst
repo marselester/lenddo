@@ -17,7 +17,7 @@ Usage example:
     except lenddo.LenddoException as exc:
         print(exc)
     else:
-        print(verif.is_facebook_verified)
+        print(verif.is_name_verified)
 
 Tests
 -----

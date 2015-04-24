@@ -1,7 +1,7 @@
 {
     "client_id": "0123456789abcdef01234567",
     "created": 1426838223,
-    "facebook_photo_url": "",
+    "facebook_photo_url": "https://graph.facebook.com/some-fb-id-123/picture?type=large",
     "flags": [
         "DB00",
         "EM00",
@@ -12,21 +12,21 @@
     "partner_id": "1005489e7ec70ec34d9zp43l",
     "probes": {
         "birthday": [
-            null,
-            null,
-            null
+            1966,
+            12,
+            30
         ],
         "employer": {
             "employer": null
         },
         "external_phone": null,
         "facebook_verified": [
-            ""
+            "some-fb-id-123"
         ],
         "name": [
-            "",
-            "",
-            ""
+            "Jon",
+            "Bastard",
+            "Snow"
         ],
         "top_employer": null,
         "university": {
@@ -35,11 +35,11 @@
     },
     "updated": 1426838223,
     "verifications": {
-        "birthday": null,
+        "birthday": true,
         "employer": null,
         "external_phone": null,
         "facebook_verified": true,
-        "name": null,
+        "name": true,
         "top_employer": null,
         "university": null
     },

@@ -23,6 +23,18 @@ class VerificationConstructFromTest(unittest.TestCase):
         expected_partner_id = '1005489e7ec70ec34d9zp43l'
         self.assertEqual(verif.partner_id, expected_partner_id)
 
+    def test_is_name_verified_is_true(self):
+        verif = Verification.construct_from(self._json)
+        self.assertTrue(verif.is_name_verified)
+
+    def test_is_birthday_verified_is_true(self):
+        verif = Verification.construct_from(self._json)
+        self.assertTrue(verif.is_birthday_verified)
+
+    def test_is_phone_verified_is_none(self):
+        verif = Verification.construct_from(self._json)
+        self.assertIsNone(verif.is_phone_verified)
+
     def test_is_facebook_verified_is_true(self):
         verif = Verification.construct_from(self._json)
         self.assertTrue(verif.is_facebook_verified)

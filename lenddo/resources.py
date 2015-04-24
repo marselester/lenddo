@@ -21,6 +21,12 @@ class Verification(object):
 
     :attribute member_id: The Lenddo member id.
     :attribute partner_id: The Lenddo partner id.
+    :attribute is_name_verified: Client name is compared with form data
+        to social data. It can be `True` (passed), `False` (failed), or `None`.
+    :attribute is_birthday_verified: Birthday is compared with form data
+        to social data. It can be `True` (passed), `False` (failed), or `None`.
+    :attribute is_phone_verified: Phone is compared with form data
+        to social data. It can be `True` (passed), `False` (failed), or `None`.
     :attribute is_facebook_verified: Facebook verification is expressed as
         `True` (passed), `False` (failed), or `None` (required data
         was missing, so unable verify).
@@ -32,6 +38,9 @@ class Verification(object):
         self._client_id = client_id
         self._member_id = None
         self._partner_id = None
+        self._is_name_verified = None
+        self._is_birthday_verified = None
+        self._is_phone_verified = None
         self._is_facebook_verified = None
 
     def __repr__(self):
@@ -50,12 +59,27 @@ class Verification(object):
         return self._partner_id
 
     @property
+    def is_name_verified(self):
+        return self._is_name_verified
+
+    @property
+    def is_birthday_verified(self):
+        return self._is_birthday_verified
+
+    @property
+    def is_phone_verified(self):
+        return self._is_phone_verified
+
+    @property
     def is_facebook_verified(self):
         return self._is_facebook_verified
 
     def refresh_from(self, attrs):
         self._member_id = attrs['member_id']
         self._partner_id = attrs['partner_id']
+        self._is_name_verified = attrs['verifications']['name']
+        self._is_birthday_verified = attrs['verifications']['birthday']
+        self._is_phone_verified = attrs['verifications']['external_phone']
         self._is_facebook_verified = attrs['verifications']['facebook_verified']
 
     def refresh(self):
