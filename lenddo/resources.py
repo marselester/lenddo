@@ -72,7 +72,8 @@ class Verification(object):
         self._partner_id = attrs['partner_id']
         self._is_name_verified = attrs['verifications']['name']
         self._is_birthday_verified = attrs['verifications']['birthday']
-        self._is_phone_verified = attrs['verifications']['external_phone']
+        # `external_phone` key might not be set.
+        self._is_phone_verified = attrs['verifications'].get('external_phone')
         self._is_facebook_verified = attrs['verifications']['facebook_verified']
 
     def refresh(self):
