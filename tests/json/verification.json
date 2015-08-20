@@ -8,7 +8,6 @@
         "NM00",
         "UN00"
     ],
-    "member_id": "340a856163880f7661080e67",
     "partner_id": "1005489e7ec70ec34d9zp43l",
     "probes": {
         "birthday": [
@@ -42,6 +41,5 @@
         "name": true,
         "top_employer": null,
         "university": null
-    },
-    "version": "3.0.0"
+    }
 }

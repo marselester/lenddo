@@ -13,11 +13,6 @@ class VerificationConstructFromTest(unittest.TestCase):
         expected_client_id = '0123456789abcdef01234567'
         self.assertEqual(verif.client_id, expected_client_id)
 
-    def test_member_id_is_expected_string(self):
-        verif = Verification.construct_from(self._json)
-        expected_member_id = '340a856163880f7661080e67'
-        self.assertEqual(verif.member_id, expected_member_id)
-
     def test_partner_id_is_expected_string(self):
         verif = Verification.construct_from(self._json)
         expected_partner_id = '1005489e7ec70ec34d9zp43l'
